@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Delivery Online</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
   <header class="topbar">
@@ -12,7 +12,7 @@
       <strong>🍔 Delivery</strong>
       <small>Hortolândia</small>
     </div>
-    <a href="admin/index.html" class="admin-link">Painel</a>
+    <a href="/admin" class="admin-link">Painel</a>
   </header>
 
   <main class="app">
@@ -42,7 +42,7 @@
   <aside id="cart" class="cart">
     <div class="cart-header">
       <h2>Seu pedido</h2>
-      <button type="button" onclick="closeCart()">×</button>
+      <button type="button" onclick="closeCart()" aria-label="Fechar carrinho">×</button>
     </div>
     <div id="cartItems"></div>
 
@@ -59,8 +59,8 @@
     </form>
   </aside>
 
-  <button id="cartButton" class="cart-button" onclick="openCart()">🛒 <span id="cartCount">0</span></button>
+  <button id="cartButton" class="cart-button" onclick="openCart()" aria-label="Abrir carrinho">🛒 <span id="cartCount">0</span></button>
 
-  <script src="app.js"></script>
+  <script src="/app.js"></script>
 </body>
 </html>

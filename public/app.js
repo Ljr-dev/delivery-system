@@ -107,7 +107,7 @@ function renderCart(rebuild = true) {
             </label>
           `).join('')}
         </div>
-      ` : '<small>Este item não possui adicionais removíveis.</small>'}
+      ` : '<small>Este item não possui ingredientes removíveis.</small>'}
       <button type="button" onclick="removeFromCart(${item.cart_id})">Remover item</button>
     </div>
   `).join('') + `<h3>Total: ${brl(total)}</h3>`;
