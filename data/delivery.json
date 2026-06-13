@@ -1,0 +1,163 @@
+{
+  "admins": [
+    {
+      "id": 1,
+      "name": "Admin",
+      "email": "admin@delivery.com",
+      "password_hash": "$2a$10$mAlQYyBNJct8I/SbB.fuOOV5TjJXOQHeU1J0wXrhCJGnxbpdapRPi"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Lanches",
+      "icon": "🍔",
+      "active": 1
+    },
+    {
+      "id": 2,
+      "name": "Pizzas",
+      "icon": "🍕",
+      "active": 1
+    },
+    {
+      "id": 3,
+      "name": "Bebidas",
+      "icon": "🥤",
+      "active": 1
+    },
+    {
+      "id": 4,
+      "name": "Doces",
+      "icon": "🧁",
+      "active": 1
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "name": "X-Burguer Bacon",
+      "description": "Pão, hambúrguer, bacon, queijo, alface e molho especial.",
+      "price": 29.9,
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=900",
+      "active": 1
+    },
+    {
+      "id": 2,
+      "category_id": 2,
+      "name": "Pizza Calabresa",
+      "description": "Mussarela, calabresa fatiada e orégano.",
+      "price": 34.9,
+      "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=900",
+      "active": 1
+    },
+    {
+      "id": 3,
+      "category_id": 3,
+      "name": "Coca-Cola 350ml",
+      "description": "Bebida gelada lata 350ml.",
+      "price": 6.5,
+      "image": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=900",
+      "active": 1
+    },
+    {
+      "id": 4,
+      "category_id": 4,
+      "name": "Cupcake Chocolate",
+      "description": "Massa fofinha com cobertura cremosa.",
+      "price": 12.9,
+      "image": "https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=900",
+      "active": 1
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "customer_name": "Leandro",
+      "phone": "19994707623",
+      "address": "Rua goiás 540",
+      "payment_method": "PIX",
+      "delivery_fee": 5,
+      "total": 34.9,
+      "status": "entrega",
+      "created_at": "2026-06-13T04:53:33.175Z"
+    },
+    {
+      "id": 2,
+      "customer_name": "Leandro",
+      "phone": "19994707623",
+      "address": "Rua goiás 540",
+      "payment_method": "PIX",
+      "delivery_fee": 5,
+      "total": 41.4,
+      "status": "confirmado",
+      "created_at": "2026-06-13T04:55:26.123Z"
+    },
+    {
+      "id": 3,
+      "customer_name": "Leandro",
+      "phone": "19994707623",
+      "address": "Retirada",
+      "payment_method": "PIX",
+      "delivery_fee": 5,
+      "total": 41.4,
+      "status": "confirmado",
+      "created_at": "2026-06-13T05:04:23.448Z"
+    }
+  ],
+  "order_items": [
+    {
+      "id": 1,
+      "order_id": 1,
+      "product_id": 1,
+      "product_name": "X-Burguer Bacon",
+      "quantity": 1,
+      "unit_price": 29.9,
+      "subtotal": 29.9
+    },
+    {
+      "id": 2,
+      "order_id": 2,
+      "product_id": 3,
+      "product_name": "Coca-Cola 350ml",
+      "quantity": 1,
+      "unit_price": 6.5,
+      "subtotal": 6.5
+    },
+    {
+      "id": 3,
+      "order_id": 2,
+      "product_id": 1,
+      "product_name": "X-Burguer Bacon",
+      "quantity": 1,
+      "unit_price": 29.9,
+      "subtotal": 29.9
+    },
+    {
+      "id": 4,
+      "order_id": 3,
+      "product_id": 1,
+      "product_name": "X-Burguer Bacon",
+      "quantity": 1,
+      "unit_price": 29.9,
+      "subtotal": 29.9
+    },
+    {
+      "id": 5,
+      "order_id": 3,
+      "product_id": 3,
+      "product_name": "Coca-Cola 350ml",
+      "quantity": 1,
+      "unit_price": 6.5,
+      "subtotal": 6.5
+    }
+  ],
+  "counters": {
+    "admins": 2,
+    "categories": 5,
+    "products": 5,
+    "orders": 4,
+    "order_items": 6
+  }
+}

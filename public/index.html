@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delivery Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <strong>🍔 Delivery</strong>
+      <small>Hortolândia</small>
+    </div>
+    <a href="admin/index.html" class="admin-link">Painel</a>
+  </header>
+
+  <main class="app">
+    <section class="hero">
+      <div>
+        <span>Entrega rápida</span>
+        <h1>Peça seu lanche online</h1>
+        <p>Monte seu pedido, remova ingredientes se precisar e finalize direto pelo sistema.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">
+        <h2>Categorias</h2>
+      </div>
+      <div id="categories" class="categories"></div>
+    </section>
+
+    <section>
+      <div class="section-title">
+        <h2>Cardápio</h2>
+      </div>
+      <div id="products" class="products"></div>
+    </section>
+  </main>
+
+  <aside id="cart" class="cart">
+    <div class="cart-header">
+      <h2>Seu pedido</h2>
+      <button type="button" onclick="closeCart()">×</button>
+    </div>
+    <div id="cartItems"></div>
+
+    <form id="checkoutForm" class="checkout-form">
+      <input name="customer_name" placeholder="Seu nome" required>
+      <input name="phone" placeholder="WhatsApp" required>
+      <input name="address" placeholder="Endereço de entrega" required>
+      <select name="payment_method" required>
+        <option value="PIX">PIX</option>
+        <option value="Cartão">Cartão</option>
+        <option value="Dinheiro">Dinheiro</option>
+      </select>
+      <button type="submit">Finalizar pedido</button>
+    </form>
+  </aside>
+
+  <button id="cartButton" class="cart-button" onclick="openCart()">🛒 <span id="cartCount">0</span></button>
+
+  <script src="app.js"></script>
+</body>
+</html>

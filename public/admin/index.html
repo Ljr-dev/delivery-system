@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel Delivery</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <main id="app">
+    <aside>
+      <div>
+        <h2>🍔 Delivery</h2>
+        <small>Painel administrativo</small>
+      </div>
+      <a href="../index.html">Ver loja</a>
+    </aside>
+
+    <section>
+      <div class="page-head">
+        <div>
+          <h1>Dashboard</h1>
+          <p>Gerencie pedidos, produtos e ingredientes removíveis.</p>
+        </div>
+        <button type="button" onclick="resetDemo()">Resetar demo</button>
+      </div>
+
+      <div id="stats" class="stats"></div>
+
+      <h2>Pedidos recentes</h2>
+      <div id="orders"></div>
+
+      <h2>Produtos</h2>
+      <div id="products"></div>
+
+      <h2>Novo produto</h2>
+      <form id="productForm" class="product-form">
+        <div class="grid-2">
+          <input name="name" placeholder="Nome" required>
+          <input name="price" placeholder="Preço. Ex: 29.90" required>
+        </div>
+        <div class="grid-2">
+          <select name="category_id" id="categorySelect" required></select>
+          <input name="image" placeholder="URL da imagem">
+        </div>
+        <textarea name="description" placeholder="Descrição"></textarea>
+        <input name="removable" placeholder="Itens que o cliente pode remover. Ex: alface, bacon, cebola">
+        <button type="submit">Salvar produto</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>
